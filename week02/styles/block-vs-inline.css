@@ -40,3 +40,22 @@ code {
     background-color: #3d503d;
     color: #fff;
 }
+
+img {
+    float: left;
+    margin: 10px color black;
+    border: 2px color green;
+    background-color: black;
+    width: 100px;
+    height: auto;
+}
+
+a {
+    background-color: black;
+    color: yellow;
+}
+
+button {
+    color: goldenrod;
+    background-color: black;
+}
