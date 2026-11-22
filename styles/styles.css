@@ -14,13 +14,40 @@ h1 {
 }
 
 img {
-    width: 150px;
+    width: 180px;
     height: auto;
+    margin: 10px 20px;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
 p {
+    padding: 0;
+}
+
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 30rem;
+    margin: 10px 20px;
+    border: 3px solid black;
     padding: 10px;
+    box-shadow: 0 0 20px black;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin-top: 50px;
+    border-top: 3px dotted black;
+    text-align: center;
 }
