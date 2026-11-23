@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -37,22 +38,28 @@ main img {
 
 p {
     padding: 0;
+    font-size: 12px;
 }
 
 main {
     max-width: 840px;
 }
 
-aside {
-    width: 30rem;
-    box-shadow: 0 0 20px black;
-    text-align: center;
-    position: relative;
-}
-
 aside img {
     width: 200px;
     height: auto;
+}
+
+aside {
+    width: 30rem;
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 20px 20px 20px black;
+    text-align: center;
+    position: relative;
 }
 
 aside h2 {
