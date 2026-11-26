@@ -6,24 +6,36 @@
 }
 
 :root {
-    --heading-background-color: rgba(71, 62, 62, 0.932);
+    --heading-background-color: rgb(79, 47, 33);
     --title-color: rgb(255, 162, 0);
     --border-color: solid black;
 }
 
 nav {
-    background-color: var(--title-color);
-    padding: 10px;
+    background-color: var(--heading-background-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 5px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+li {
+    margin-left: 10px;
 }
 
 h1 {
     color: var(--title-color);
+    border-bottom: dotted;
+    padding-bottom: 8px;
 }
 
 main img {
@@ -32,7 +44,7 @@ main img {
     margin: 0 0 1rem 1rem;
     border: 2px var(--border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30x gray;
     float: right;
 }
 
@@ -55,9 +67,8 @@ aside {
     margin: 10px;
     border: 10px;
     padding: 10px;
-    background-color: black;
+    background-color: var(--heading-background-color);
     color: white;
-    box-shadow: 20px 20px 20px black;
     text-align: center;
     position: relative;
 }
@@ -65,15 +76,38 @@ aside {
 aside h2 {
     position: absolute;
     top: 18px;
-    left: 190px;
-    font-size: 16px;
+    left: 100px;
+    font-size: 20px;
     background-color: var(--heading-background-color);
 }
 
 footer {
-    margin-top: 50px;
     border-top: 3px dotted black;
     text-align: center;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 /*Class Selectors */
